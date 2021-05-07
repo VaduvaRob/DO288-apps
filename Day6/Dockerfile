@@ -1,3 +1,3 @@
 FROM node:14
 EXPOSE 3000
-RUN node server.js
+CMD ["node","server.js"]
