@@ -1,5 +1,7 @@
 FROM node:14
+WORKDIR /app
+COPY package.json ./app
 RUN npm install express
-COPY ..
+COPY . /app
 EXPOSE 3000
 CMD ["node","server.js"]
