@@ -1,7 +1,7 @@
-FROM mysql
-  
-ENV MYSQL_DATABASE test
-ENV MYSQL_USERNAME robertv
-ENV MYSQL_PASSWORD robertv
-ENV MYSQL_ROOT_PASSWORD robertv
-
+FROM mysql       
+COPY . .       
+ENV MYSQL_USER user   
+ENV MYSQL_PASSWORD pass   
+ENV MYSQL_ROOT_PASSWORD pass   
+ENV MYSQL_DATABASE testtask      
+ADD test.sql /docker-entrypoint-initdb.d
