@@ -7,7 +7,6 @@ ENV MYSQL_ROOT_PASSWORD robertv
 
 WORKDIR /app
 COPY . /app
-
-
+ADD test.sql /docker-entrypoint-initdb.d
 
 
