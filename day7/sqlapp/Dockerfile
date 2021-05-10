@@ -1,3 +1,10 @@
 FROM mysql:latest
 
-ENV 
+ENV MYSQL_DATABASE test
+ENV MYSQL_USERNAME robertv
+ENV MYSQL_PASSWORD robertv
+ENV MYSQL_ROOT_PASSWORD robertv
+WORKDIR /db
+COPY . /db
+
+CMD mysql -u -p < test.sql
