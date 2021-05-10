@@ -6,7 +6,8 @@ ENV MYSQL_PASSWORD robertv
 ENV MYSQL_ROOT_PASSWORD robertv
 
 WORKDIR /app
-COPY . .
+COPY . /app
+
 
 
 
