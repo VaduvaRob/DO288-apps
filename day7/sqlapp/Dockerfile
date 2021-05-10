@@ -1,4 +1,4 @@
-FROM mysql:latest
+FROM mysql
    
 ENV MYSQL_DATABASE test
 ENV MYSQL_USERNAME robertv
