@@ -1,4 +1,4 @@
-FROM mysql       
+FROM mysql:latest     
 COPY . .       
 ENV MYSQL_USER robertv
 ENV MYSQL_PASSWORD robertv   
