@@ -5,6 +5,7 @@ process.on('uncaughtException', (err) => {
 const express = require('express')
 const app = express()
 const port = 3000
+app.get('/', (req, res) =>{
 con.query('SELECT * from test2', function (err, rows, fields) {
  if (err) res.send(err)
  console.log('The solution is: ', rows)
