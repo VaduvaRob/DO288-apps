@@ -2,8 +2,7 @@ pipeline{
     agent any
     stages{
         stage('Build'){
-        steps{
-            echo "SALUT"
+        steps {
             sh 'sudo yum update'
             sh 'sudo yum install -y httpd' 
             }
