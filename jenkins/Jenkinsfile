@@ -23,7 +23,11 @@ pipeline{
             }
         }
         }
-       
+         stage('Check'){
+        steps {
+            sh 'curl localhost:8080' 
+        }
+        }
     }
 }
 
